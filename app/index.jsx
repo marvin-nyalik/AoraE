@@ -3,6 +3,7 @@ import { Text, View, ScrollView, Image } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import images from "../constants/images";
 import CustomButton from "../components/CustomButton";
+import { router } from "expo-router";
 
 export default function App() {
   return (
@@ -39,7 +40,7 @@ export default function App() {
 
           <CustomButton
             title="Continue with Email"
-            handlePress={() => {}}
+            handlePress={() => { router.push('/signin')}}
             containerStyles="w-full mt-7"
           />
         </View>
