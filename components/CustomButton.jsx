@@ -17,7 +17,9 @@ const CustomButton = ({
         isLoading ? "opacity-50" : ""
       }`}
     >
-      <Text className={`font-psemibold text-xl text-primary ${textStyles}`}>{title}</Text>
+      <Text className={`font-psemibold text-xl text-primary ${textStyles}`}>
+        {title}
+      </Text>
     </TouchableOpacity>
   );
 };
