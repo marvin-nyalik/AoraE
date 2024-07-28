@@ -1,53 +1,90 @@
 # Aora
-A minimalist social media mobile app with react native. Join in, share moments, videos etc. with your buddies
 
-# Welcome to your Expo app 👋
+Aora is a video-sharing app built with React Native and Appwrite, allowing users to create, bookmark, and view videos, including the latest videos. The app is developed using Expo and can be run in development mode with the Expo client app.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Table of Contents
 
-## Get started
+- [Features](#features)
+- [Installation](#installation)
+- [Running the App](#running-the-app)
+- [Screenshots](#screenshots)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
 
-1. Install dependencies
+## Features
+
+- Create and upload videos
+- Bookmark favorite videos
+- View all videos and latest videos
+- User authentication and profile management
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/marvin-nyalik/AoraE.git
+   cd aora
+   ```
+
+2. Install dependencies:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. Set up the Appwrite backend:
+   - Follow the [Appwrite installation guide](https://appwrite.io/docs/installation) to set up your Appwrite server.
+   - Configure your Appwrite project and obtain the necessary API keys and endpoint.
+
+
+## Running the App
+
+1. Start the Expo development server:
 
    ```bash
-    npx expo start
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+2. Open the Expo client app on your mobile device or emulator and scan the QR code to run the app.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Screenshots
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+COMING SOON.
 
-## Get a fresh project
+## Technologies Used
 
-When you're ready, run:
+- **React Native**: For building the mobile app.
+- **Expo**: For running the app in development mode.
+- **Appwrite**: For managing the backend and database.
+- **JavaScript**: Programming language used for development.
 
-```bash
-npm run reset-project
-```
+## Contributing
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Contributions are welcome! Please follow these steps to contribute:
 
-## Learn more
+1. Fork the repository.
+2. Create a new branch:
 
-To learn more about developing your project with Expo, look at the following resources:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+3. Make your changes and commit them:
 
-## Join the community
+   ```bash
+   git commit -m 'Add some feature'
+   ```
 
-Join our community of developers creating universal apps.
+4. Push to the branch:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
