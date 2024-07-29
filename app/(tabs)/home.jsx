@@ -9,10 +9,12 @@ import { RefreshControl } from "react-native";
 import { getAllPosts, getLatestPosts } from "../../lib/appwrite";
 import useAppwrite from "../../lib/useAppwrite";
 import VideoCard from "../../components/VideoCard";
+import { useGlobalContext } from "../../context/GlobalContext";
 
 const Home = () => {
   const [refreshing, setRefreshing] = useState(false);
-  
+  const { user, setUser, setIsLoggedIn } = useGlobalContext();
+
   const { data:posts, refetch } = useAppwrite(getAllPosts);
   const { data:latestPosts } = useAppwrite(getLatestPosts);
 
@@ -25,7 +27,6 @@ const Home = () => {
 
   return (
     <SafeAreaView className="bg-primary h-full">
-      <Text>Home</Text>
       <FlatList
         data={posts}
         keyExtractor={(item) => item.$id}
@@ -40,7 +41,7 @@ const Home = () => {
                   Welcome Back
                 </Text>
                 <Text className="text-2xl font-psemibold text-white">
-                  Marvin
+                  {user?.username}
                 </Text>
               </View>
               <View>
