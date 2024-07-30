@@ -1,6 +1,4 @@
 import {
-  View,
-  Text,
   FlatList,
   ImageBackground,
   Image,
@@ -25,7 +23,7 @@ const TrendingItem = ({ activeItem, item }) => {
   const [play, setPlay] = useState(false);
   return (
     <Animatable.View
-      className="mr-5"
+      className="mr-8"
       animation={activeItem === item.$id ? zoomIn : zoomOut}
       duration={500}
     >
@@ -80,9 +78,9 @@ const Trending = ({ posts }) => {
       )}
       onViewableItemsChanged={viewableItemsChanged}
       viewabilityConfig={{
-        itemVisiblePercentThreshold: 50,
+        itemVisiblePercentThreshold: 70,
       }}
-      contentOffset={{ x: 10 }}
+      contentOffset={{ x: 170 }}
       horizontal
     />
   );
