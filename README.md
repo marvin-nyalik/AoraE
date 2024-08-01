@@ -40,7 +40,7 @@ Aora is a video-sharing app built with React Native and Appwrite, allowing users
    - Configure your Appwrite project and obtain the necessary API keys and endpoint.
 
 ## Running the App
-
+### Option 1
 1. Start the Expo development server:
 
    ```bash
@@ -48,6 +48,11 @@ Aora is a video-sharing app built with React Native and Appwrite, allowing users
    ```
 
 2. Open the Expo client app on your mobile device or emulator and scan the QR code to run the app.
+
+### Option 2
+1. Download the apk from [this Google Drive link](https://docs.google.com/uc?export=download&id=1nQIUFkIe2hgLZ3XPwlXdMY-YKSGYzypF)
+2. Enable installation of .apks apps from file system in your settings on your android device
+3. Install, register, and launch the app.
 
 ## Screenshots
 
